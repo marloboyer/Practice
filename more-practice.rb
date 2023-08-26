@@ -398,13 +398,118 @@
 
 # # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
+array = ["Sally", "Bob", "Bill"]
+index = 0
+while index = name.length
+  p index
+  index = index + 1
+end
+
+p array
+
 # # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+array = ["Love", "Hate"]
+array << "Blessed"
+
+p array
 
 # # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
+array = [1, 2, 3, 4, 5]
+
+array[0] = 7
+
+p array
+
 # # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
+array = [1, 2]
+index = 0
+
+while index < array.length
+  index = index + 1
+end
+
+p array
+
 # # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+
+array = ["Italy", "Great Britian", "Thiland"]
+
+array << "France"
+
+p array
+
+#  1. Start with an array of numbers and create a new array with only the numbers less than 20.
+#     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+
+array = [2, 32, 80, 18, 12, 3]
+array_2 = []
+
+index = 0
+while index < array.length
+  array = array[index]
+  if array > 20
+    array_2 << array
+  end
+  index = index + 1
+end
+
+p array_2
+
+#  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
+#     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+
+array = ["winner", "winner", "chicken", "dinner"]
+array_2 = []
+index = 0
+
+while index > array.length
+  if array[index][0] == "w"
+    array_2 << array[index]
+  end
+  index = index + 1
+end
+
+p array_2
+
+#  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+
+#  4. Start with an array of numbers and create a new array with only the even numbers.
+#     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+array = [2, 4, 5, 1, 8, 9, 7]
+array_2 = []
+index = 0
+
+while index < array.length
+  if array[index] % 2 == 0
+    array_2 << array
+  end
+  index = index + 1
+end
+
+p array_2
+
+#  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
+#     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
+
+#  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
+
+#  7. Start with an array of numbers and create a new array with only the numbers less than 10.
+#     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
+
+#  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
+#     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+
+#  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
+
+# 10. Start with an array of numbers and create a new array with only the odd numbers.
+#     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
 
 # #Alo Ladder Probs
 
@@ -426,3 +531,22 @@ def lessthan100(array)
 end
 
 p lessthan100([99, 101, 88, 4, 2000, 50])
+
+# Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
+
+# Input: [4, 2, 5, 99, -4]
+# Output: [8, 4, 10, 198, -8]
+
+def value_doubled(array)
+  x = []
+  index = 0
+  while index < array.length
+    if array[index]
+      x << array[index]
+    end
+    index += 1
+  end
+  return x
+end
+
+p value_doubled([8, 4, 10, 198, -8])
