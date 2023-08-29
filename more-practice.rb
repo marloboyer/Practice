@@ -495,6 +495,19 @@ p array_2
 
 #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
+array = ["a", "man", "a", "plan", "a", "canal", "panama"]
+four_letters = []
+
+index = 0
+while index < array.length
+  array = array[index]
+  if array.length > 4
+    four_letters << array
+  end
+  index = index + 1
+end
+
+p four_letters
 
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
@@ -502,14 +515,117 @@ p array_2
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
 
+array = [8, 23, 0, 44, 1980, 3]
+array_2 = []
+
+index = 0
+while index < array.length
+  array = array[index]
+  if array < 10
+    array_2 << array
+  end
+  index = index + 1
+end
+
 #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+
+array = ["big", "little", "good", "bad"]
+array_2 = []
+
+index = 0
+while index < array.length
+  array = array[index]
+  if array[index][0] == "b"
+    array_2 << array
+  end
+  index = index + 1
+end
 
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+
+array = [2, 4, 5, 1, 8, 9, 7]
+array_2 = []
+
+index = 0
+
+while index < array.length
+  if array[index] % 2 == 1
+    array_2 << array
+  end
+  index = index + 1
+end
+
+p array_2
+
+#  1. Start with an array of numbers and compute the sum of all the numbers.
+#     For example, [5, 10, 8, 3] becomes 26.
+
+array = [5, 10, 8, 3]
+
+index = 0
+sum = 0
+
+while index < array.length
+  sum = sum + array[index]
+  index = index + 1
+end
+
+p sum
+
+#  2. Start with an array of strings and combine them all into a single string.
+#     For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
+
+array = ["volleyball", "basketball", "badminton"]
+index = 0
+one_string = ""
+
+while index < array.length
+  array = array[index]
+  one_string = one_string + array
+  index = index + 1
+end
+
+p one_string
+
+#  3. Start with an array of hashes and compute the sum of the prices (from the :price key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
+
+#  4. Start with an array of numbers and compute the the minumum number.
+#     For example, [5, 10, 8, 3, 9] becomes 3.
+
+#  5. Start with an array of strings and compute the total length of all the strings.
+#     For example, ["volleyball", "basketball", "badminton"] becomes 29.
+
+#  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
+
+#  7. Start with an array of numbers and compute product of all the numbers.
+#     For example, [5, 10, 8, 3] becomes 1200.
+
+array = [5, 10, 8, 3]
+product = 1
+index = 0
+
+while index < array.length
+  product = product * array[index]
+  index = index + 1
+end
+
+p product
+
+#  8. Start with an array of strings and combine them all into a single string, separated by dashes.
+#     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
+
+#  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
+#     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
+
+# 10. Start with an array of numbers and compute the maximum number.
+#     For example, [5, 10, 8, 3] becomes 10.
 
 # #Alo Ladder Probs
 
