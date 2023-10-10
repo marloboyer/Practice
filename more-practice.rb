@@ -699,6 +699,47 @@ end
 
 p max_number
 
+# 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+person = { "first_name" => "Marlo", "last_name" => "Boyer", "email_address" => "marlo.boyer7@yahoo.com" }
+
+p person["first_name"]
+p person["last_name"]
+p person["email_address"]
+
+# 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
+
+people = [
+person_1 = { "first_name" => "Marlo", "last_name" => "Boyer" }
+person_2 = { "first_name" => "Pho", "last_name" => "Hansen" }
+person_3 = { "first_name" => "Benny", "last_name" => "Boyer" }]
+
+p people[0]["first_name"]
+p people[0]["last_name"]
+
+# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+prices = {"hamburger" => "toy_car", "chicken_fingers" => "yoyo", "grilled_cheese" => "mini_squishmallow"}
+prices["salad"] = "pusheen"
+
+prices 
+
+
+
+# 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+
+# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+# 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+# 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
+
+# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
 # #Alo Ladder Probs
 
 # # Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
