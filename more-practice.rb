@@ -728,11 +728,42 @@ prices
 
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
+book = {"book_title" => "Game of Thrones", "author" => "RR Martin", "number_of_pages" => "2750", "language" => "English"}
+
+p book["book_title"]
+p book["author"]
+p book["number_of_pages"]
+p book["language"]
+
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+books = [
+  book_1 = {"title" => "Cupcakes", "author" => "Cindy Crawford"}
+  book_2 = {"title" => "Cupcakes", "author" => "Cindy Crawford"}
+  book_3 = {"title" => "Cupcakes", "author" => "Cindy Crawford"}
+]
+
+p book[2]
+p book[1]
+
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
+states = {"state_one" => "Texas", "capital_one" => "Austin", "state_two" => "Maryland", "capital_two" => "Bethesda", "state_three" => "Georgia", "capital_three" => "Alanta"}
+
+states["Idaho"] = "Boise"
+
+p states
+
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+laptop = {"brand" => "Apple", "model" => "IDK", "year" => "2020"}
+
+p latop["brand"]
+p latop["model"]
+p latop["year"]
+
+
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
