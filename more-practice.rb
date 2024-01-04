@@ -625,6 +625,13 @@ p minumum_number
 
 #  5. Start with an array of strings and compute the total length of all the strings.
 #     For example, ["volleyball", "basketball", "badminton"] becomes 29.
+words = ["volleyball", "basketball", "badmiton"]
+total_length = 0
+index = 0
+while index < words.length
+  total_length += words[index].length
+end
+ p total length 
 
 #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
@@ -766,10 +773,111 @@ p latop["year"]
 
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+laptops = [
+{"brand" => "Apple", "model" => "MacBook Pro"},
+{"brand" => "Microsoft", "model" => "Surface"},
+{"brand" => "Dell", "model" => "XPS 13"} ]
+
+p laptops[1]["model"]
+
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+dictionary = {"happy" => "to feel joy", "sad" => "to feel upset"}
+dictionary["glad"] = "delighted"
+
+p dictionary
+
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+shirt = {"brand" => "Hanes", "color" => "white", "size" => "Large"}
+
+p shirt["brand"]
+p shirt["color"]
+p shirt["size"]
+
+##Functions 
+
+#1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+
+def get_double(number)
+  return number * 2 
+end 
+
+p get_double(12)
+
+# 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
+
+def make_upcase(string)
+  return string.upcase
+end
+
+p make_upcase("Benny")
+
+# 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
+
+def get_difference(number_1, number_2)
+  return number_1 - number_2
+end
+ 
+p get_difference(1,5)
+
+# 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+
+def square(number)
+  return number * number
+end 
+
+p square(4)
+
+
+# 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
+
+def first_letter(string)
+  return string[0]
+end 
+ 
+p first_letter("Apple")
+
+# 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
+
+def combined(string_1, string_2, string_3)
+  return "#{string_1} + #{string_2} + #{string_3}" 
+end 
+
+p combined("Benny", "likes", "you")
+
+# 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
+
+def return_string(number)
+  return number.to_s
+end 
+
+p return_string(5)
+
+# 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+
+def times_five(string)
+  return string * 5
+end
+
+p times_five("pho")
+
+# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+
+def average(number_1, number_2, number_3)
+  return (number_1 + number_2 + number_3) / (3.0) 
+end
+ 
+p average(1,2,3)
+
+# 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+
+def time_ten_plus_thirty(number)
+  return number * 10 + 30
+end 
+
+p time_ten_plus_thirty(10)
 
 # #Alo Ladder Probs
 
